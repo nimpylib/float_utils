@@ -1,3 +1,4 @@
 
-type OverflowError* = object of CatchableError
+import ../aritherr
+export aritherr.OverflowError
 
