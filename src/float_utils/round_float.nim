@@ -2,9 +2,7 @@
 import std/fenv
 
 from ./isX import isfinite
-#TODO:short_float_repr
-#import ../pyconfig/pycore/pymath/short_float_repr
-const PY_SHORT_FLOAT_REPR = false
+import pkg/autoconf_sugars/short_float_repr
 import ./round/no_ndigit
 export no_ndigit.round
 
