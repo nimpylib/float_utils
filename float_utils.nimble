@@ -20,6 +20,8 @@ elif pylibPre[^1] != '/':
 template pylib(x, ver) =
   requires if pylibPre == "": x & ver
            else: pylibPre & x
+
+pylib "nimpatch", " ^= 0.1.1"
 pylib "dtoa_c", " ^= 0.1.0"
 pylib "autoconf_sugars", " ^= 0.1.0"
 pylib "errno", " ^= 0.1.0"
