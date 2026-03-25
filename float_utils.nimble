@@ -26,4 +26,5 @@ pylib "dtoa_c", " ^= 0.1.0"
 pylib "autoconf_sugars", " ^= 0.1.0"
 pylib "errno", " ^= 0.1.0"
 pylib "unicode_space_decimal", " ^= 0.1.0"
+pylib "pymath", " ^= 0.1.0"
 
