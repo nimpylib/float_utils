@@ -28,4 +28,5 @@ pylib "handy_sugars", " ^= 0.1.0"
 pylib "errno", " ^= 0.1.0"
 pylib "unicode_space_decimal", " ^= 0.1.0"
 pylib "pymath", " ^= 0.1.0"
+pylib "pysimperr", " ^= 0.1.0"
 

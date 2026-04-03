@@ -1,6 +1,2 @@
-
-type
-  ArithmeticError* = object of CatchableError
-  ZeroDivisionError* = object of ArithmeticError
-  OverflowError* = object of ArithmeticError
-
+import pkg/pysimperr/aritherr
+export aritherr
