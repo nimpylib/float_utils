@@ -1,4 +1,4 @@
-
+## for backward compatible
 import ../aritherr
-export aritherr.OverflowError
+export aritherr
 
