@@ -1,4 +1,7 @@
 
+when defined(nimPreviewSlimSystem):
+  import std/assertions
+
 import std/parseutils  # skipWhile, parseInt, parseBiggestInt
 from std/strutils import find, initSkipTable, isSpaceAscii, toLowerAscii,
   HexDigits

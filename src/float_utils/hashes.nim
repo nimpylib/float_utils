@@ -1,4 +1,7 @@
 
+when defined(nimPreviewSlimSystem):
+  import std/assertions
+
 import std/hashes; export Hash
 from ./isX import isfinite, isinf, isnan
 from std/math import frexp
