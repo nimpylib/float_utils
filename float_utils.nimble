@@ -17,14 +17,17 @@ if envVal != "": pylibPre = ""
 #if pylibPre == Def: pylibPre = ""
 elif pylibPre[^1] != '/':
   pylibPre.add '/'
+template pylibOf(x, ver): string =
+  if pylibPre == "": x & ver
+  else: pylibPre & x
 template pylib(x, ver) =
-  requires if pylibPre == "": x & ver
-           else: pylibPre & x
-
+  requires pylibOf(x, ver)
 pylib "nimpatch", " ^= 0.1.1"
 pylib "handy_sugars", " ^= 0.1.0"
 pylib "unicode_space_decimal", " ^= 0.1.0"
 pylib "pymath", " ^= 0.1.0"
 pylib "pyround", " ^= 0.1.0"
 pylib "pysimperr", " ^= 0.1.0"
+
+taskRequires "test", pylibOf("pyunittest", " ^= 0.1.0")
 
